@@ -52,15 +52,16 @@ $(document).ready(function(){
 	$(".inner").on("click",".removeResource",function(){
 		var thisOne = $(this);
 		console.log($(thisOne).parent().find("select").val());
-		$(this).velocity({rotateZ: "90deg",background: "#ff0000"},200)
+		$(this).velocity({backgroundColor: "#ff3333"},100);
+		$(this).velocity({rotateZ: "90deg"},100);
 		setTimeout(function(){
-			$(thisOne).parent().velocity("slideUp",200)},200);
-		setTimeout(function(){$(thisOne).parent().remove()},401);
+			$(thisOne).parent().velocity("slideUp",150)},200);
+		setTimeout(function(){$(thisOne).parent().remove()},501);
 	})
 	$(".inner").on("submit","form",function(e){
 		e.preventDefault();
 		if($(this).attr("id") ==="resourceForm"){
-			socket.emit("resourceReq");
+			socket.emit("resourceReq", [$(".resourceName").val(), $(".resourceCost").val()]);
 		}else if($(this).attr("id") ==="productForm"){
 			socket.emit("productReq");
 		}
