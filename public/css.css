@@ -33,3 +33,53 @@ nav li:hover{
 	content: ":";
 	padding-right: 1%;
 }
+.addResource{
+	padding: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	text-align: center;
+	border: none;
+	background: #000;
+	margin-top: 1em;
+}
+moar, less{
+	font-size: 1.8em;
+	position: relative;
+	bottom: .15em;
+	color: #fff;
+	transition: all 0.2s ease-in;
+}
+moar:hover{
+	color: rgba(120,120,200,0.8);
+}
+less:hover{
+	color: rgba(120,120,200,0.8);
+}
+less{
+	bottom: 0.3em;
+}
+.removeResource{
+	padding: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	text-align: center;
+	border: none;
+	background: #000;
+	position: relative;
+	top: 0.8em;
+	margin-left: 1em;
+}
+.resourceEntryDiv input{
+	width: 2em;
+}
+.productName{
+	display: block;
+}
+.resourceEntryDiv{
+	display: block;
+	margin-top: 2%;
+}
