@@ -9,3 +9,27 @@ nav{
 	background: linear-gradient(#000,#333,#000);
 	border-bottom: 1px solid #111;
 }
+nav ul{
+	margin-left: 5%;
+}
+nav li{
+	display: inline-block;
+	margin-right: 5%;
+	font-size: 1.1em;
+	transition: all 0.3s ease;
+}
+nav li:hover{
+	color: #666;
+}
+.inner{
+
+}
+.currentForm{
+	font-size: 1.3em;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+.currentForm label:after{
+	content: ":";
+	padding-right: 1%;
+}
